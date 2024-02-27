@@ -326,3 +326,31 @@ def test_PKLSH():
     assert msg.fleet == 100
     assert msg.latitude == 49.902456666666666
     assert msg.longitude == -119.39340666666666
+
+
+def test_PAIR001():
+    # A sample proprietary AROHA sentence used for acknowledgement
+    data = "$PAIR001,002,0*39"
+    msg = pynmea2.parse(data)
+    assert msg.manufacturer == "AIR"
+    assert msg.PAIR_No == 1
+    assert msg.ACK_No == 2
+
+
+def test_PAIR020():
+    # A sample proprietary AROHA sentence used for firmware version
+    data = "$PAIR020,AG3335M_V1.0.0.ER5_20200416,S,I,1003931,2003132012,a272,0,,,3aae182,2003132006,062ab13,2003132011,,*28"
+    msg = pynmea2.parse(data)
+    assert msg.manufacturer == "AIR"
+    assert msg.PAIR_No == 20
+    assert msg.SDK_Ver_Build_time == 'AG3335M_V1.0.0.ER5_20200416'
+    assert msg.Frequency == 'S'
+    assert msg.SW_package == 'I'
+    assert msg.mnl_service == '1003931'
+    assert msg.mnl_service_build_time == '2003132012'
+    assert msg.L1_ROM_version == 'a272'
+    assert msg.L1_RAM_version == '0'
+    assert msg.mnl_kernel_version == '3aae182'
+    assert msg.mnl_kernel_build_time == '2003132006'
+    assert msg.mnl_kf_version == '062ab13'
+    assert msg.mnl_kf_build_time == '2003132011'
