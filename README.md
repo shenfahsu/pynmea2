@@ -4,15 +4,15 @@
 
 `pynmea2` is based on [`pynmea`](https://code.google.com/p/pynmea/) by Becky Lewis
 
-The `pynmea2` homepage is located at <http://github.com/Knio/pynmea2>
+The `pynmea2` homepage is located at <http://github.com/shenfahsu/pynmea2>
 
 ## Compatibility
 
 `pynmea2` is compatable with Python 2.7 and Python 3.4+
 
 ![Python version](https://img.shields.io/pypi/pyversions/pynmea2.svg?style=flat)
-[![Build status](https://github.com/Knio/pynmea2/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Knio/pynmea2/actions/workflows/ci.yml?query=branch%3Amaster+)
-[![Coverage status](https://img.shields.io/coveralls/github/Knio/pynmea2/master.svg?style=flat)](https://coveralls.io/r/Knio/pynmea2?branch=master)
+[![Build status](https://github.com/shenfahsu/pynmea2/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/shenfahsu/pynmea2/actions/workflows/ci.yml?query=branch%3Amaster+)
+[![Coverage status](https://img.shields.io/coveralls/github/shenfahsu/pynmea2/master.svg?style=flat)](https://coveralls.io/r/shenfahsu/pynmea2?branch=master)
 
 ## Installation
 
